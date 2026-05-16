@@ -67,6 +67,12 @@ jobs:
         distribution: temurin
         java-version: 21
 
+    - name: Setup ccache
+      uses: hendrikmuhs/ccache-action@v1
+      with:
+          key: bazel-ccache
+          max-size: 2G
+
     - name: Build kernel
       id: buildKernel
       run: |
