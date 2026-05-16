@@ -50,10 +50,10 @@ jobs:
     - name: Fetch toolchains
       run: |
         cd kernel_root
-        aria2c https://github.com/rsuntkOrgs/android_kernel_samsung_a05m-6.6/releases/download/v1.0/xaa
-        aria2c https://github.com/rsuntkOrgs/android_kernel_samsung_a05m-6.6/releases/download/v1.0/xab
+        aria2c https://github.com/rsuntk/files/releases/download/a05m-tc/toolchains.tar.gz_00
+        aria2c https://github.com/rsuntk/files/releases/download/a05m-tc/toolchains.tar.gz_01
         echo "INFO: Appending files and extracting ..."
-        cat xaa xab > toolchains.tar.gz; tar -xf toolchains.tar.gz; rm toolchains.tar.gz xaa xab
+        cat toolchains.tar.gz_00 toolchains.tar.gz_01 > toolchains.tar.gz; tar -xf toolchains.tar.gz; rm toolchains.tar.gz toolchains.tar.gz_00 toolchains.tar.gz_01
       working-directory: rootdir
 
     - name: Prepare timezone fix
