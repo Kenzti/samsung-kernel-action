@@ -74,7 +74,7 @@ jobs:
           max-size: 2G
 
     - name: Setup KernelSU
-      run: cd kernel-6.6; curl -LSs "https://raw.githubusercontent.com/tiann/KernelSU/main/kernel/setup.sh" | bash -s main
+      run: cd kernel_root/kernel-6.6; curl -LSs "https://raw.githubusercontent.com/tiann/KernelSU/main/kernel/setup.sh" | bash -s main
       working-directory: rootdir
 
     - name: Build kernel
