@@ -28,6 +28,10 @@ jobs:
         path: rootdir
         show-progress: false
         fetch-depth: 1
+
+    - name: Remove unnecessary files.
+      uses: rokibhasansagar/slimhub_actions@v25.42.5
+
         
     - name: Prepare dependencies
       run: |
