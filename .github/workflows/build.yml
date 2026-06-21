@@ -4,7 +4,7 @@ on:
     inputs:
       REPO:
         description: 'Kernel repository'
-        default: 'https://github.com/rsuntk/android_kernel_samsung_a12s'
+        default: 'https://github.com/Dai-doz/A127F'
         required: true
       BRANCH:
         description: 'Kernel branch'
