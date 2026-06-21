@@ -90,6 +90,9 @@ jobs:
       run: bash ./build.sh --fetch-toolchains
 
     - name: Build Kernel
+
+       make -j2 O=out ARCH=arm64 ...
+      
       if: github.event.inputs.UPDATE_TOOLCHAIN != 'true'
       env:
         TG_TOKEN: ${{ secrets.BOT_TOKEN }}
