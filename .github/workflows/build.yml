@@ -4,7 +4,7 @@ on:
     inputs:
       REPO:
         description: 'Kernel repository'
-        default: 'https://github.com/Dai-doz/A127F'
+        default: 'https://github.com/Dai-doz/Neutron-Plus-Kernel'
         required: true
       BRANCH:
         description: 'Kernel branch'
