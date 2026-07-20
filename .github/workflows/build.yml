@@ -4,18 +4,18 @@ on:
     inputs:
       REPO:
         description: 'Kernel repository'
-        default: 'https://github.com/Kenzti/Neutron-Plus-Kernel'
+        default: 'https://github.com/Kenzti/android_kernel_samsung_a13'
         required: true
       BRANCH:
         description: 'Kernel branch'
-        default: 'android-4.19-stable'
+        default: 'main'
         required: true
       DEVICE_TARGET:
         description: 'Target device to build'
-        default: 'a12snsxx'
+        default: 'a13snsxx'
         type: choice
         options:
-          - a12snsxx
+          - a13snsxx
           - a21snsxx
           - m12nsxx
       KSU:
